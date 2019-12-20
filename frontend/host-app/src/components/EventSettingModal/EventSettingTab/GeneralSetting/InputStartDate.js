@@ -29,7 +29,6 @@ const CustomTimePicker = styled(TimePicker)({
 function InputStartDate(props) {
 	const {startDate, endDate} = props;
 	const {setStartDate, setEndDate} = props.dispatch;
-
 	const minutes = moment(endDate).diff(moment(new Date()), "minutes") + 1;
 	const hours = moment(endDate).diff(moment(new Date()), "hours");
 
